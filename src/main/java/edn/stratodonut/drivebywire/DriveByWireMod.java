@@ -51,10 +51,6 @@ public class DriveByWireMod
                 .build()
         );
 
-        ValkyrienSkies.api().getShipLoadEvent().on (ship -> {
-            ShipWireNetworkManager.getOrCreate(ship.getShip());
-        });
-
         // TODO: CHANGE LOGO
         // TODO: Test with audience(?)
         WireCreativeTabs.register(modEventBus);
